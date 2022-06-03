@@ -7,6 +7,7 @@
 {% if site.gitalk.enable %}
 
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/gangdong/gangdong.github.io@dev/assets/js/md5.min.js"></script>
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script type="text/javascript">
       var gitalk = new Gitalk({
@@ -15,7 +16,7 @@
         repo: '{{ site.gitalk.repo }}',
         owner: '{{ site.gitalk.owner }}',
         admin: ['{{ site.gitalk.owner }}'],
-        id: '{{ page.url }}',
+        id: 'md5({{ page.url }})',
         labels: ['gitalk'],
         perPage: 50,
         distractionFreeMode: true

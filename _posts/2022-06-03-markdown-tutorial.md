@@ -2,7 +2,7 @@
 title: 使用markdown
 date: 2022-06-03 18:18:00 +0800
 categories: blogs
-tags: [markdown]
+tags: [markdown, vs-code]
 ---
 
 Markdown是用文档形式编写简易html网页的语言，可以节省一些排版操作。
