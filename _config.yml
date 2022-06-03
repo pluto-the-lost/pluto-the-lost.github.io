@@ -507,6 +507,7 @@ facebook_comments_plugin:
 # 由于duoshuo停止服务，disqus需要番羽土啬，畅言需要备案，不适合github page使用，因此选择gitment
 #gitment
 gitment:
+  enable: true
   owner: pluto-the-lost
   repo: pluto-the-lost.github.io
   clientId: 2b3ad916f980ef3272fa
