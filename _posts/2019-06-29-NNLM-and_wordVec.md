@@ -112,7 +112,3 @@ Use a Huffman tree to assign short binary codes to frequent words. The tree will
 
 
 
-
-  [1]: http://static.zybuluo.com/pluto-the-lost/evp8nezeasqq13wj4xd4aqqs/image.png
-  [2]: http://static.zybuluo.com/pluto-the-lost/h0uf4mfotx51ooaome06ypsu/image.png
-  [3]: http://static.zybuluo.com/pluto-the-lost/59wfrg4kw2b01d8tm3q395ey/image.png

@@ -7,7 +7,7 @@ tags: [machine-learning, deep-learning, NLP, reinforcement-learning]
 
 # Dual Learning
 
-![image.png-101.6kB][1]
+![image.png-101.6kB](/assets/images/2019-07-04-dual-learning.md/1.png)
 [link to the paper](https://papers.nips.cc/paper/6469-dual-learning-for-machine-translation.pdf)
 
 <!-- more -->
@@ -35,12 +35,12 @@ tags: [machine-learning, deep-learning, NLP, reinforcement-learning]
 #### 2. Neural Machine Translation
 
 - RNN & LSTM/GRU
-    - ![image.png-91.9kB][2]
+    - ![image.png-91.9kB](/assets/images/2019-07-04-dual-learning.md/2.png)
     - has problem of gradient vanish/exploding
     - if using LSTM, have problem when target sentence is longer then the source
 
 - Seq2Seq
-    - ![image.png-99.3kB][3]
+    - ![image.png-99.3kB](/assets/images/2019-07-04-dual-learning.md/3.png)
     - for $y_t$, it can use information before the time step $t$
     - if $\Theta$ is all parameters in this model, there should be: 
     - $$\Theta^*=argmax_\Theta {\sum_{(x,y)\in D}\sum_{t=1}^{T_y}\log_P(y_t|y<t,x;\Theta)}$$
@@ -55,7 +55,7 @@ tags: [machine-learning, deep-learning, NLP, reinforcement-learning]
         - no guarantee on the quality
 
 ### **Method**
-![image.png-257.5kB][4]
+![image.png-257.5kB](/assets/images/2019-07-04-dual-learning.md/4.png)
 
 The main idea is clear: for any sentence $s_A$ in language A, first use translator $\Theta_{AB}$ to translate it to $s_{mid}$ in language B. Then language model $LM_B$ evaluate the quality of $s_{mid}$. Note that the evaluation is only linguistic instead of the meaning of the sentence. Then $s_{mid}$ is translated back to language A, which is kind of "supervised" cause we already know the original sentence.
 
@@ -81,18 +81,10 @@ Although it is intuitive to understand its idea, some of details in the algorith
 ### **Experiment**
 I don't want to talk about this part, they just claimed that they are good
 
-![image.png-26.4kB][5]
+![image.png-26.4kB](/assets/images/2019-07-04-dual-learning.md/5.png)
 
-![image.png-33.7kB][6]
+![image.png-33.7kB](/assets/images/2019-07-04-dual-learning.md/6.png)
 
-![image.png-61.4kB][7]
+![image.png-61.4kB](/assets/images/2019-07-04-dual-learning.md/7.png)
         
 
-
-  [1]: http://static.zybuluo.com/pluto-the-lost/rmg5xgrpnj9an17h1l5vx6fk/image.png
-  [2]: http://static.zybuluo.com/pluto-the-lost/ehj1uzzns9v8pl0mskn4f5e9/image.png
-  [3]: http://static.zybuluo.com/pluto-the-lost/hec96hqxcq1cwoa1w9oakf6i/image.png
-  [4]: http://static.zybuluo.com/pluto-the-lost/bbvekclimxqw0zxyypxse9yq/image.png
-  [5]: http://static.zybuluo.com/pluto-the-lost/kh0tfy7kfqn6qge85ej1df9j/image.png
-  [6]: http://static.zybuluo.com/pluto-the-lost/em9rd3bkkxzmzovo39nvh1bc/image.png
-  [7]: http://static.zybuluo.com/pluto-the-lost/okk5s2srqz1kxviooodxe6wr/image.png
