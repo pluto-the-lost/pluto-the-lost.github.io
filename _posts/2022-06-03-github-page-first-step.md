@@ -140,7 +140,7 @@ Jekyll支持另一种高亮方法，在正常的markdown预览器中无法显示
 
 ## 评论功能
 
-这里建议使用[gittalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)，因为其它支持的要么停止服务了，要么被墙
+这里建议使用[gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)，因为其它支持的要么停止服务了，要么被墙
 
 1. 进入github -> Settings -> Developer settings -> OAuth Apps -> New OAuth App，或者直接点[这里](https://github.com/settings/applications/new)
 2. 填上面网页里的表，除了Authorization callback URL一定要填`USERNAME.github.io`，其它都随便填
@@ -155,6 +155,40 @@ gitalk:
   owner: USERNAME
   admin: [USERNAME]
 ```
-5. 可以了，每篇文章需要作者开一个Issue，然后其他人才可以评论（在admin里的人就可以开Issue）。也不用特地去开，上传一篇博客之后，拉到最底下第一次加载评论区的时候就自动有一个新Issue了
+5. 把`_includes/comments/gitalk.html`的内容替换成下面这段
+```html
+{% unless site.duoshuo_shortname
+  or site.disqus_shortname
+  or site.hypercomments_id
+  or site.gentie_productKey
+  or site.duoshuo and site.duoshuo.shortname %}
+
+{% if site.gitalk.enable %}
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/gangdong/gangdong.github.io@dev/assets/js/md5.min.js"></script>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: '{{ site.gitalk.clientID }}',
+        clientSecret: '{{ site.gitalk.clientSecret }}',
+        repo: '{{ site.gitalk.repo }}',
+        owner: '{{ site.gitalk.owner }}',
+        admin: ['{{ site.gitalk.owner }}'],
+        id: md5(location.pathname),
+        labels: ['gitalk'],
+        perPage: 50,
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+</script>
+
+{% endif %}
+
+{% endunless %}
+```
+这是为了避免文章名太长导致的报错，详情见[这里](https://github.com/gitalk/gitalk/issues/115)
+
+6. 可以了，每篇文章需要作者开一个Issue，然后其他人才可以评论（在admin里的人就可以开Issue）。也不用特地去开，上传一篇博客之后，拉到最底下第一次加载评论区的时候就自动有一个新Issue了
 
 
