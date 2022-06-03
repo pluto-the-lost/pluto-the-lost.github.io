@@ -118,6 +118,26 @@ Jekyll支持另一种高亮方法，在正常的markdown预览器中无法显示
 
 ![img](/assets/images/20220603/shiprock.c3b9a023.jpg)
 
+## 插入视频
+
+[插入bilibili视频教程](https://www.cnblogs.com/wkfvawl/p/12268980.html)
+
+先获取视频的cid和aid，在下面的代码中修改这两项，再把修改后的html代码加到md文件中想要视频出现的地方即可
+
+```html
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?cid=145147963&aid=84267566&page=1&as_wide=1&high_quality=1&danmaku=1" frameborder="no" scrolling="no"></iframe>
+</div>
+```
+
+<!-- <div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?cid=145147963&aid=84267566&page=1&as_wide=1&high_quality=1&danmaku=1" frameborder="no" scrolling="no"></iframe>
+</div> -->
+
+插入youtube视频
+
+直接在youtube页面点击分享 -> 嵌入，复制那段`<iframe`开头的html代码，放到md文件里就行
+
 ## 评论功能
 
 这里建议使用[gittalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)，因为其它支持的要么停止服务了，要么被墙
