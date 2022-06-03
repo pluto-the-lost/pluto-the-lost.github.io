@@ -31,7 +31,7 @@ $$$$
     - Word2vec
 
 ## NNLM
-![img](/assets/images/2019/0629_NNLM.png)
+![img](/assets/images/2019-06-29-NNLM-and_wordVec.md/1.png)
 
     1. word indices extract a D dimentional vector from a shared projection matrix
     2. N words' vectors are projected to hidden layer, with H hidden units and a tanh non-linear activation
@@ -58,7 +58,7 @@ This method is slow for the existance of the non-linear hidden layer. In 2013, M
 
 ## **Word2vec**
 
-![image.png-65kB](/assets/images/2019/0629_word2vec.png)
+![image.png-65kB](/assets/images/2019-06-29-NNLM-and_wordVec.md/2.png)
 
 The method has two distinct model: CBOW and skip-gram. They share common idea that we don't need a extra hidden layer, but use the word vector to do prediction directly.
 
@@ -98,7 +98,7 @@ did not understand the $C\times D$ part
 ## tricks
 ### hierarchical softmax
 Use a Huffman tree to assign short binary codes to frequent words. The tree will be constructed as below:
-![img](/assets/images/2019/0629_huffman.png)
+![img](/assets/images/2019-06-29-NNLM-and_wordVec.md/3.png)
     
     1. each node in the candidate pool is regard as a tree (with only root)
     2. each tree has a score that to be minimized in the final tree
