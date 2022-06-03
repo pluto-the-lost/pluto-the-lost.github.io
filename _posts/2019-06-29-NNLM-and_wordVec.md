@@ -31,7 +31,7 @@ $$$$
     - Word2vec
 
 ## NNLM
-![image.png-97.5kB](http://static.zybuluo.com/pluto-the-lost/h0uf4mfotx51ooaome06ypsu/image.png)
+![img](/assets/images/2019/0629_NNLM.png)
 
     1. word indices extract a D dimentional vector from a shared projection matrix
     2. N words' vectors are projected to hidden layer, with H hidden units and a tanh non-linear activation
