@@ -5,11 +5,11 @@
 <script>
     var gitment = new Gitment({
 		id: '{{page.date}}',
-        owner: 'pluto-the-lost',
-        repo: 'pluto-the-lost.github.io',
+        owner: '{{site.gitment.owner}}',
+        repo: '{{site.gitment.repo}}',
         oauth: {
-            client_id: '{{site.comment_gitment_clientId}}',
-            client_secret: '{{site.comment_gitment_clientSecret}}',
+            client_id: '{{site.gitment.clientId}}',
+            client_secret: '{{site.gitment.clientSecret}}',
         },
     });
     gitment.render('gitmentContainer')

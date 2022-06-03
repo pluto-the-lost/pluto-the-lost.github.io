@@ -506,9 +506,11 @@ facebook_comments_plugin:
 
 # 由于duoshuo停止服务，disqus需要番羽土啬，畅言需要备案，不适合github page使用，因此选择gitment
 #gitment
-comment_gitment_repo: changwh.github.io
-comment_gitment_clientId: 2b3ad916f980ef3272fa
-comment_gitment_clientSecret: 5caad69ff453c6780bcfc794b700f7284563ce31
+gitment:
+  owner: pluto-the-lost
+  repo: pluto-the-lost.github.io
+  clientId: 2b3ad916f980ef3272fa
+  clientSecret: 5caad69ff453c6780bcfc794b700f7284563ce31
 
 
 # VKontakte API Support.
