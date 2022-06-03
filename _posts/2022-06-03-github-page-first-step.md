@@ -1,6 +1,6 @@
 ---
 title: 学习Github page写博客
-date: 2022-06-03 15:20:00
+date: 2022-06-03 15:20:00 +0800
 categories: blogs
 tags: [Github, jekyll]
 ---
