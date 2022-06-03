@@ -98,7 +98,7 @@ did not understand the $C\times D$ part
 ## tricks
 ### hierarchical softmax
 Use a Huffman tree to assign short binary codes to frequent words. The tree will be constructed as below:
-![img](http://static.zybuluo.com/pluto-the-lost/59wfrg4kw2b01d8tm3q395ey/image.png)
+![img](https://cloud.tsinghua.edu.cn/seafhttp/files/6f0a2eb7-a411-4b5f-aab4-bd54619749d5/P376_fig9-32.PNG)
     
     1. each node in the candidate pool is regard as a tree (with only root)
     2. each tree has a score that to be minimized in the final tree
