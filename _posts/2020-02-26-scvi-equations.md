@@ -42,7 +42,7 @@ $$
 \end{align}
 $$
 ### 3. 
-if we combine the upper 2 equations:
+if we combine the 2 above equations:
 $$
 \begin{align}
 \log P_\theta(x) =& E_q\log P_\theta(x|z) - D_{KL}(q_\phi(z|x)||P_\theta(z)) + D_{KL}(q_\phi(z|x)||P_\theta(z|x))\\\\
