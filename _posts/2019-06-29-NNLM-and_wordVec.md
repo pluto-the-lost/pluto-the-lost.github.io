@@ -58,7 +58,7 @@ This method is slow for the existance of the non-linear hidden layer. In 2013, M
 
 ## **Word2vec**
 
-![image.png-65kB](http://static.zybuluo.com/pluto-the-lost/evp8nezeasqq13wj4xd4aqqs/image.png)
+![image.png-65kB](/assets/images/2019/0629_word2vec.png)
 
 The method has two distinct model: CBOW and skip-gram. They share common idea that we don't need a extra hidden layer, but use the word vector to do prediction directly.
 
@@ -98,7 +98,7 @@ did not understand the $C\times D$ part
 ## tricks
 ### hierarchical softmax
 Use a Huffman tree to assign short binary codes to frequent words. The tree will be constructed as below:
-![img](https://cloud.tsinghua.edu.cn/seafhttp/files/6f0a2eb7-a411-4b5f-aab4-bd54619749d5/P376_fig9-32.PNG)
+![img](/assets/images/2019/0629_huffman.png)
     
     1. each node in the candidate pool is regard as a tree (with only root)
     2. each tree has a score that to be minimized in the final tree
