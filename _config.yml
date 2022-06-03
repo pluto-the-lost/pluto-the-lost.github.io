@@ -381,7 +381,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: ghx
   count: true
   # hide comments (visitors need to click to load the comments)
@@ -503,6 +503,13 @@ facebook_comments_plugin:
   num_of_posts: 10  # min posts num is 1
   width: 100%       # default width is 550px
   scheme: light     # default scheme is light (light or dark)
+
+# 由于duoshuo停止服务，disqus需要番羽土啬，畅言需要备案，不适合github page使用，因此选择gitment
+#gitment
+comment_gitment_repo: changwh.github.io
+comment_gitment_clientId: 2b3ad916f980ef3272fa
+comment_gitment_clientSecret: 5caad69ff453c6780bcfc794b700f7284563ce31
+
 
 # VKontakte API Support.
 # To get your AppID visit https://vk.com/editapp?act=create
