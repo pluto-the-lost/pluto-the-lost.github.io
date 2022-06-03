@@ -5,7 +5,6 @@ categories: blogs
 tags: [reinforcement-learning, machine-learning]
 ---
 
-# Reinforcement Learning
 
 The book *[Reinforcement Learning: An introduction](http://www.incompleteideas.net/book/the-book-2nd.html)* is written by Richard S. Sutton, firstly in 2015 and the second edition just came out in 2017. 
 

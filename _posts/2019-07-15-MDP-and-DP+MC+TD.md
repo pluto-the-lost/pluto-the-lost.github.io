@@ -5,8 +5,6 @@ categories: blogs
 tags: [reinforcement-learning]
 ---
 
-# MDP & DP+MC+TD
-
 [多臂赌博机](https://www.zybuluo.com/pluto-the-lost/note/1510806)问题里，玩家面临 $k$ 个选择，但是每一个时间点上这 $k$ 个选择对应的奖励分布没有变化，只是通过玩的经验，玩家对它们的估计有了更新。可以认为，**多臂赌博机只有一个状态**。
 
 <!-- more -->

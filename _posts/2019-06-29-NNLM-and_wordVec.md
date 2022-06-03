@@ -5,8 +5,6 @@ categories: blogs
 tags: [deep-learning,representation-learning,NLP,pre-trained-model]
 ---
 
-# NNLM & Word2vec
-
 [(NNLM paper) Y. Bengio, R. Ducharme, P. Vincent. A neural probabilistic language model. Journal of Machine Learning Research, 3:1137-1155, 2003.](http://jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
 
 [(word2vec paper) Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. Efficient estimation of word representations in vector space. ICLR Workshop, 2013.](https://arxiv.org/pdf/1301.3781.pdf)

@@ -5,7 +5,6 @@ categories: blogs
 tags: [machine-learning, deep-learning, NLP, reinforcement-learning]
 ---
 
-# Dual Learning
 
 ![image.png-101.6kB](/assets/images/2019-07-04-dual-learning.md/1.png)
 [link to the paper](https://papers.nips.cc/paper/6469-dual-learning-for-machine-translation.pdf)

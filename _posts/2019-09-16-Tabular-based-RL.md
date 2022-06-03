@@ -5,8 +5,6 @@ categories: blogs
 tags: [reinforcement-learning, machine-learning]
 ---
 
-# Tabular-based RL
-
 
 当一个强化学习问题里的状态数和动作数都相对比较小，状态-动作关系就可以**写成一个表** (table, array or tabular)，表的数值对应的是在某个状态&动作下的**价值函数** (value function)。这种情况下通常我们可以找到**精确解**，即**可以精确得到一个最优的价值，及其对应的最优策略**。与之相对的，如果状态或动作空间太大，就只能用求出**估计解**(approximate solutions)，可能是局部最优，或者最终的价值只是一个估计值。复杂的问题更广泛一些，但是这个页面我们先看看能精确求解的简单问题。
 

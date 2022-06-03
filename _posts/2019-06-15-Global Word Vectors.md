@@ -7,8 +7,6 @@ tags: [representation-learning, NLP, machine-learning, matrix-decomposition]
 
 
 
-# Global Word Vectors
-
 These series of methods, including **LSA, PLSA, LDA and GloVe**, are based on statisticscalled **topic models**. They are not specifically designed for word representation, however, LSA, PLSA and GloVe do obtain word vectors during the training.
 
 <!-- more -->
