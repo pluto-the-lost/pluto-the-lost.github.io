@@ -1,12 +1,8 @@
 ---
 title: 学习Github page写博客
 date: 2022-06-03 15:20:00
-categories:
-- blog
-tags:
-- 新技术
-- markdown
-- Github
+categories: blogs
+tags: [Github, jekyll]
 ---
 
 # Github page和Jekyll介绍
