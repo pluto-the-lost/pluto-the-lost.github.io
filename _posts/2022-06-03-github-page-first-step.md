@@ -93,9 +93,11 @@ end
 
 Jekyll支持另一种高亮方法，在正常的markdown预览器中无法显示，但编译成网页后显示正常，而且**可以切换高亮风格**(不过我觉得原生的很够用了)
 
-    {% highlight ruby %} def foo puts 'foo' end {% endhighlight %}
+```
+{% highlight ruby %} def foo puts 'foo' end {% endhighlight %}
 
-    {% highlight ruby linenos %} def foo puts 'foo' end {% endhighlight %}
+{% highlight ruby linenos %} def foo puts 'foo' end {% endhighlight %}
+```
 
 {% highlight ruby %} def foo puts 'foo' end {% endhighlight %}
 
