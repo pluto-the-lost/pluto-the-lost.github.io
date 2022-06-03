@@ -120,3 +120,21 @@ Jekyll支持另一种高亮方法，在正常的markdown预览器中无法显示
 
 ## 评论功能
 
+这里建议使用[gittalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)，因为其它支持的要么停止服务了，要么被墙
+
+1. 进入github -> Settings -> Developer settings -> OAuth Apps -> New OAuth App，或者直接点[这里](https://github.com/settings/applications/new)
+2. 填上面网页里的表，除了Authorization callback URL一定要填`USERNAME.github.io`，其它都随便填
+3. 按`Register application`按钮，得到`Client ID`和`Client Secret`.
+4. `_config.yml`里：
+```yml
+gitalk:
+  enable: true
+  clientID: Client ID
+  clientSecret: Client Secret
+  repo: USERNAME.github.io
+  owner: USERNAME
+  admin: [USERNAME]
+```
+5. 可以了，每篇文章需要作者开一个Issue，然后其他人才可以评论（在admin里的人就可以开Issue）
+
+
