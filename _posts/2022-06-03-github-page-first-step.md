@@ -120,36 +120,3 @@ Jekyll支持另一种高亮方法，在正常的markdown预览器中无法显示
 
 ## 评论功能
 
-```html
-<div id="gitmentContainer"></div> 
-<script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css"/>
-<script>
-    var gitment = new Gitment({
-		id: '{{page.date}}',
-        owner: '{{site.gitment.owner}}',
-        repo: '{{site.gitment.repo}}',
-        oauth: {
-            client_id: '{{site.gitment.clientId}}',
-            client_secret: '{{site.gitment.clientSecret}}',
-        },
-    });
-    gitment.render('gitmentContainer')
-</script>
-```
-
-<div id="gitmentContainer"></div> 
-<script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css"/>
-<script>
-    var gitment = new Gitment({
-		id: '{{page.date}}',
-        owner: '{{site.gitment.owner}}',
-        repo: '{{site.gitment.repo}}',
-        oauth: {
-            client_id: '{{site.gitment.clientId}}',
-            client_secret: '{{site.gitment.clientSecret}}',
-        },
-    });
-    gitment.render('gitmentContainer')
-</script>

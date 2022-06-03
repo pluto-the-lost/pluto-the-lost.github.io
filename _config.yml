@@ -436,12 +436,12 @@ changyan:
 
 # Support for gitalk comments system.
 gitalk:
-  enable: false
-  clientID: # 54730ddf7b9420460c03
-  clientSecret: # c05684701b25ff1c19ea0c01ce4d80c125e0707d
-  repo: # colingpt.github.io
-  owner: # colingpt
-  admin: # colingpt
+  enable: true
+  clientID: 2b3ad916f980ef3272fa
+  clientSecret: 7067bb90c7ff41ae24c935058e141d794581b608
+  repo: pluto-the-lost.github.io
+  owner: pluto-the-lost
+  admin: [pluto-the-lost]
 
 # Baidu Share
 # Available value:
@@ -503,16 +503,6 @@ facebook_comments_plugin:
   num_of_posts: 10  # min posts num is 1
   width: 100%       # default width is 550px
   scheme: light     # default scheme is light (light or dark)
-
-# 由于duoshuo停止服务，disqus需要番羽土啬，畅言需要备案，不适合github page使用，因此选择gitment
-#gitment
-gitment:
-  enable: true
-  owner: pluto-the-lost
-  repo: pluto-the-lost.github.io
-  clientId: 2b3ad916f980ef3272fa
-  clientSecret: 7067bb90c7ff41ae24c935058e141d794581b608
-
 
 # VKontakte API Support.
 # To get your AppID visit https://vk.com/editapp?act=create
