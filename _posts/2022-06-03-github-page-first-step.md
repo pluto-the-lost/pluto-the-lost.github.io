@@ -11,7 +11,7 @@ tags: [Github, jekyll]
 
 Github可以建立个人静态网页，虽然只能写写博客，但省去了搭服务器、申请公网ip、买域名等复杂的步骤。
 
-<!-- more -->
+<!--more-->
 
 操作也很简单，[官方教程](https://pages.github.com/)说得很清楚
 
