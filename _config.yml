@@ -569,7 +569,7 @@ calendar:
   orderBy: startTime
   offsetMax: 24
   offsetMin: 4
-  timeZone:
+  timeZone: Asia/Shanghai
   showDeleted: false
   singleEvents: true
   maxResults: 250
@@ -739,4 +739,4 @@ images: assets/images
 version: 5.1.1
 
 # show future articles
-future: true
+# future: true
