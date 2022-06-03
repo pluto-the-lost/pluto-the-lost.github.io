@@ -9,7 +9,11 @@ tags: [Github, jekyll]
 
 #### Github page建立个人主页
 
-Github可以建立个人静态网页，虽然只能写写博客，但省去了搭服务器、申请公网ip、买域名等复杂的步骤。操作也很简单，[官方教程](https://pages.github.com/)说得很清楚
+Github可以建立个人静态网页，虽然只能写写博客，但省去了搭服务器、申请公网ip、买域名等复杂的步骤。
+
+<!-- more -->
+
+操作也很简单，[官方教程](https://pages.github.com/)说得很清楚
 
 1. 创建一个**公库**，叫做`USERNAME.github.io`，这里的`USERNAME`是你的github账户名
 2. 在库的setting里选择一个theme，也可以用其它的Jekyll theme，我这里用的就是一个叫[NexT](https://github.com/Simpleyyt/jekyll-theme-next)的第三方主题
