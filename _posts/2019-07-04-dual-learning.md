@@ -87,3 +87,14 @@ I don't want to talk about this part, they just claimed that they are good
 ![image.png-61.4kB](/assets/images/2019-07-04-dual-learning.md/7.png)
         
 
+<p>
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/html/mm.html" frameborder="1" scrolling="no"></iframe>
+</div>
+</p>
+
+<p>
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/html/science.abo0510.html" frameborder="1" scrolling="no"></iframe>
+</div>
+</p>
