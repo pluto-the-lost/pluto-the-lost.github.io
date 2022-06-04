@@ -94,7 +94,7 @@ I don't want to talk about this part, they just claimed that they are good
 </p>
 
 <p>
-<div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/html/science.abo0510.html" frameborder="1" scrolling="no"></iframe>
+<div style="width:100%; height:950px;border:none;text-align:center">
+<iframe style="position: absolute; width: 850; height: 800; left: 0; top: 0;" src="/assets/html/science.abo0510.html" allowtransparency="yes"></iframe>
 </div>
 </p>
