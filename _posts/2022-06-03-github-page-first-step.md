@@ -188,10 +188,10 @@ markdown的多级标题天然地很适合思维导图，这里可以用一个[ma
 这个页面中的思维导图始终调不成满意的样式，还是单独搞一个html页面更好看一点
 
 ```html
-[<b style='color:#FF7F7F;'>Click to view mindmap in a new tab!</b>](/assets/images/2022-06-03-github-page-first-step.md/mm.html)
+[<b style='color:#FF7F7F;'>Click to view mindmap in a new tab!</b>](/assets/images/2022-06-03-github-page-first-step.md/mm.html){:target="_blank"}
 ```
 
-[<b style='color:#FF7F7F;'>Click to view mindmap in a new tab!</b>](/assets/images/2022-06-03-github-page-first-step.md/mm.html)
+[<b style='color:#FF7F7F;'>Click to view mindmap in a new tab!</b>](/assets/images/2022-06-03-github-page-first-step.md/mm.html){:target="_blank"}
 
 ## 评论功能
 
