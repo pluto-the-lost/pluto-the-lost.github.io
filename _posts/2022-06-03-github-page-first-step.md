@@ -167,18 +167,23 @@ src换成微博视频右键点击“复制链接地址”得到的链接
 <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/NIPS-2016-dual-learning-for-machine-translation-Paper.pdf" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
 </div>
 
-#### 插入思维导图（mindmap）
-markdown的多级标题天然地很适合思维导图，这里可以用一个[mindmap插件](https://github.com/gera2ld/markmap)去做自动转换。有两种用法，可以[在线转换](https://markmap.js.org/repl)并导出成html或svg文件，又或者可以安装它的[vs-code插件](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)。打开mindmap预览并export html。然后用插入html的方法将其放到文章里
+### 插入思维导图（mindmap）
+markdown的多级标题天然地很适合思维导图，这里可以用一个[markmap插件](https://github.com/gera2ld/markmap)去做自动转换。有两种用法，可以[在线转换](https://markmap.js.org/repl)并导出成html或svg文件，又或者可以安装它的[vs-code插件](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)。打开mindmap预览并export html。然后用插入html的方法将其放到文章里。建议稍微调整一下padding，让导图面积大一点，同时为了不影响排版，做一个隐藏点击展开。
 
 ```html
-<div style="position: relative; padding: 30% 45%;">
+<details>
+  <summary>Click to view mindmap!</summary>
+<div style="position: relative; padding: 100% 100%;">
 <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/NIPS-2016-dual-learning-for-machine-translation-Paper.pdf" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
 </div>
+</details>
 ```
-
-<div style="position: relative; padding: 30% 45%;">
+<details>
+  <summary>Click to view mindmap!</summary>
+<div style="position: relative; padding: 100% 100%;">
 <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/mm.html" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
 </div>
+</details>
 
 ## 评论功能
 

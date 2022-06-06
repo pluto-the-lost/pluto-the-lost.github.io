@@ -20,3 +20,20 @@ Markdown是用文档形式编写简易html网页的语言，可以节省一些�
 
 安装后打开.md文件，按`ctrl+k v`就可以在侧边打开预览了
 
+## 折叠部分内容
+
+```markdown
+<details>
+  <summary>Click to view hide content!</summary>
+
+this is something hidden in the void.
+
+</details>
+```
+
+<details>
+  <summary>Click to view hide content!</summary>
+
+this is something hidden in the void.
+
+</details>
