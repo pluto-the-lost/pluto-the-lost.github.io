@@ -123,7 +123,9 @@ Jekyll支持另一种高亮方法，在正常的markdown预览器中无法显示
 
 ## 插入视频、pdf、html文件
 
-这些都是通过在markdown中插入html代码实现的，最重要的是`<iframe>`这个组件，它可以插入各种各样的东西
+这些都是通过在markdown中插入html代码实现的，最重要的是`<iframe>`这个组件，它可以插入各种各样的东西。
+
+`<iframe>`插入的内容很多在vs-code的markdown预览器上无法正常显示，但push到github后，主页上就能显示了，暂时还不知道为什么。
 
 ### 插入视频
 #### 插入bilibili视频
