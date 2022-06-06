@@ -207,5 +207,4 @@ markdown的多级标题天然地很适合思维导图，这里可以用一个[ma
       admin: [USERNAME]
     ```
 5. 把`_includes/comments/gitalk.html`的内容用[这个文件](/assets/images/2022-06-03-github-page-first-step.md/gitalk.txt){:target="_blank"}里的内容替换。这是为了避免文章名太长导致的报错，详情见[这里](https://github.com/gitalk/gitalk/issues/115)
-
 6. 可以了，每篇文章需要作者开一个Issue，然后其他人才可以评论（在admin里的人就可以开Issue）。也不用特地去开，上传一篇博客之后，拉到最底下第一次加载评论区的时候就自动有一个新Issue了
