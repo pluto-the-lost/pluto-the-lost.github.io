@@ -117,12 +117,15 @@ Jekyll支持另一种高亮方法，在正常的markdown预览器中无法显示
 
 如果要插入自己的图片，就把图片上传到博客repo根目录的`/assets`文件夹里，再用相对目录索引
 
-    ![img](/assets/images/20220603/shiprock.c3b9a023.jpg)
+    ![img](/assets/images/2022-06-03-github-page-first-step.md/shiprock.c3b9a023.jpg)
 
-![img](/assets/images/20220603/shiprock.c3b9a023.jpg)
+![img](/assets/images/2022-06-03-github-page-first-step.md/shiprock.c3b9a023.jpg)
 
-## 插入视频
+## 插入视频、pdf、html文件
 
+这些都是通过在markdown中插入html代码实现的，最重要的是`<iframe>`这个组件，它可以插入各种各样的东西
+
+### 插入视频
 #### 插入bilibili视频
 [参考网页](https://www.cnblogs.com/wkfvawl/p/12268980.html)
 
@@ -147,6 +150,33 @@ Jekyll支持另一种高亮方法，在正常的markdown预览器中无法显示
 ```
 
 src换成微博视频右键点击“复制链接地址”得到的链接
+
+### 插入pdf、html文件
+
+把上面某段iframe中的src改成文件路径即可
+
+```html
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/NIPS-2016-dual-learning-for-machine-translation-Paper.pdf" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
+</div>
+```
+
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/NIPS-2016-dual-learning-for-machine-translation-Paper.pdf" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
+</div>
+
+#### 插入思维导图（mindmap）
+markdown的多级标题天然地很适合思维导图，这里可以用一个[mindmap插件](https://github.com/gera2ld/markmap)去做自动转换。有两种用法，可以[在线转换](https://markmap.js.org/repl)并导出成html或svg文件，又或者可以安装它的[vs-code插件](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)。打开mindmap预览并export html。然后用插入html的方法将其放到文章里
+
+```html
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/NIPS-2016-dual-learning-for-machine-translation-Paper.pdf" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
+</div>
+```
+
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/mm.html" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
+</div>
 
 ## 评论功能
 
