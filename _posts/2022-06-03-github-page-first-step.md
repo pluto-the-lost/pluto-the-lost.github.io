@@ -96,11 +96,7 @@ end
 
 Jekyll支持另一种高亮方法，在正常的markdown预览器中无法显示，但编译成网页后显示正常，而且**可以切换高亮风格**(不过我觉得原生的很够用了)
 
-```
-{% highlight ruby %} def foo puts 'foo' end {% endhighlight %}
-
-{% highlight ruby linenos %} def foo puts 'foo' end {% endhighlight %}
-```
+![img](/assets/images/2022-06-03-github-page-first-step.md/1.png)
 
 {% highlight ruby %} def foo puts 'foo' end {% endhighlight %}
 
@@ -210,39 +206,6 @@ markdown的多级标题天然地很适合思维导图，这里可以用一个[ma
       owner: USERNAME
       admin: [USERNAME]
     ```
-5. 把`_includes/comments/gitalk.html`的内容替换成下面这段
-  
-    ```html
-    {% unless site.duoshuo_shortname
-      or site.disqus_shortname
-      or site.hypercomments_id
-      or site.gentie_productKey
-      or site.duoshuo and site.duoshuo.shortname %}
-
-    {% if site.gitalk.enable %}
-
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/gangdong/gangdong.github.io@dev/assets/js/md5.min.js"></script>
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script type="text/javascript">
-          var gitalk = new Gitalk({
-            clientID: '{{ site.gitalk.clientID }}',
-            clientSecret: '{{ site.gitalk.clientSecret }}',
-            repo: '{{ site.gitalk.repo }}',
-            owner: '{{ site.gitalk.owner }}',
-            admin: ['{{ site.gitalk.owner }}'],
-            id: md5(location.pathname),
-            labels: ['gitalk'],
-            perPage: 50,
-            distractionFreeMode: true
-          });
-          gitalk.render('gitalk-container');
-    </script>
-
-    {% endif %}
-
-    {% endunless %}
-    ```
-    这是为了避免文章名太长导致的报错，详情见[这里](https://github.com/gitalk/gitalk/issues/115)
+5. 把`_includes/comments/gitalk.html`替换成[这个文件](/_includes/_third-party/comments/gitalk.html){:target="_blank"}。这是为了避免文章名太长导致的报错，详情见[这里](https://github.com/gitalk/gitalk/issues/115)
 
 6. 可以了，每篇文章需要作者开一个Issue，然后其他人才可以评论（在admin里的人就可以开Issue）。也不用特地去开，上传一篇博客之后，拉到最底下第一次加载评论区的时候就自动有一个新Issue了
