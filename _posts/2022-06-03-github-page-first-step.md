@@ -22,12 +22,15 @@ Github可以建立个人静态网页，虽然只能写写博客，但省去了�
 
 #### 每个仓库可以有一个Github page
 
-
+（to.be.continue）
 
 #### Jekyll
 
-这是一个从markdown等文本文件生成静态网页的网页编译器，是基于ruby语言的，可以在本机装一个Jekyll，然后编译网页，host一个自己的服务器。但我没装，Github会自动编译`USERNAME.github.io`里面的
+这是一个从markdown等文本文件生成静态网页的网页编译器，是基于ruby语言的，可以在本机装一个Jekyll，然后编译网页，host一个自己的服务器。但我没装，Github会自动编译`USERNAME.github.io`这个库里面的文件，然后更新到对应的个人主页上。
 
+Jekyll拥有各种各样的theme，github原生支持不到10种，功能都非常简单，也比较丑，建议使用第三方的主题。我这个站使用的是[NexT](https://github.com/simpleyyt/jekyll-theme-next)。实验室建站可以考虑使用[YosefLab](https://yoseflab.github.io/)的[同款模板](https://github.com/alshedivat/al-folio)
+
+自动生成静态网站的工具还有Hexo和Hugo等，详见[Jekyll / Hugo / Hexo 比较](https://lexcao.io/zh/posts/jekyll-hugo-hexo/)。但我认为用Jekyll的主要好处是github支持直接托管网站，这样一方面不需要自己维护服务器，另一方面，其他人是怎么写博客的，源码你都能在对应的github repo里看到，省去很多学习成本。
 
 # 撰写博客
 
