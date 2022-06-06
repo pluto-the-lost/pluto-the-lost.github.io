@@ -172,15 +172,15 @@ markdown的多级标题天然地很适合思维导图，这里可以用一个[ma
 
 ```html
 <details>
-  <summary>Click to view mindmap!</summary>
-<div style="position: relative; padding: 100% 100%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/NIPS-2016-dual-learning-for-machine-translation-Paper.pdf" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
+  <summary><b style='color:#FF7F7F;'>Click to view mindmap!</b></summary>
+<div style="position: relative; padding: 100% 100%; background: #D3D3D3;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/mm.html" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
 </div>
 </details>
 ```
 <details>
   <summary><b style='color:#FF7F7F;'>Click to view mindmap!</b></summary>
-<div style="position: relative; padding: 100% 100%; background: #D3D3D3;">
+<div align="center" style="position: relative; padding: 100% 100%; background: #D3D3D3;">
 <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/mm.html" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
 </div>
 </details>
