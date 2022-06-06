@@ -7,7 +7,7 @@ tags: [machine-learning, deep-learning, NLP, reinforcement-learning]
 
 <p>
 <div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2019-07-04-dual-learning.md/mm.html" frameborder="1" scrolling="no"></iframe>
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2019-07-04-dual-learning.md/mm.html" frameborder="1" scrolling="no" allowfullscreen="true"></iframe>
 </div>
 </p>
 
