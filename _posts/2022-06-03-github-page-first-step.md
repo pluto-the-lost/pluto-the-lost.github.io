@@ -185,6 +185,14 @@ markdown的多级标题天然地很适合思维导图，这里可以用一个[ma
 </div>
 </details>
 
+这个页面中的思维导图始终调不成满意的样式，还是单独搞一个html页面更好看一点
+
+```html
+[<b style='color:#FF7F7F;'>Click to view mindmap in a new tab!</b>](/assets/images/2022-06-03-github-page-first-step.md/mm.html)
+```
+
+[<b style='color:#FF7F7F;'>Click to view mindmap in a new tab!</b>](/assets/images/2022-06-03-github-page-first-step.md/mm.html)
+
 ## 评论功能
 
 这里建议使用[gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)，因为其它支持的要么停止服务了，要么被墙。gitalk本质上是在github.io这个repo里提issue，所以只要网页能访问，评论就能打开。
