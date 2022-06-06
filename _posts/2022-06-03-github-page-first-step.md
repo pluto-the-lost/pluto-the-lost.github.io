@@ -232,16 +232,3 @@ gitalk:
 这是为了避免文章名太长导致的报错，详情见[这里](https://github.com/gitalk/gitalk/issues/115)
 
 6. 可以了，每篇文章需要作者开一个Issue，然后其他人才可以评论（在admin里的人就可以开Issue）。也不用特地去开，上传一篇博客之后，拉到最底下第一次加载评论区的时候就自动有一个新Issue了
-
-
-<div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/Marker_genes.csv" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
-</div>
-
-<div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/20220425_405购置.xlsx" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
-</div>
-
-<div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-03-github-page-first-step.md/Unicoord.pptx" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
-</div>
