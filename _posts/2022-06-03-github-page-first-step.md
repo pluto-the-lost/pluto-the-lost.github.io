@@ -123,7 +123,8 @@ Jekyll支持另一种高亮方法，在正常的markdown预览器中无法显示
 
 ## 插入视频
 
-[插入bilibili视频教程](https://www.cnblogs.com/wkfvawl/p/12268980.html)
+#### 插入bilibili视频
+[参考网页](https://www.cnblogs.com/wkfvawl/p/12268980.html)
 
 先获取视频的cid和aid，在下面的代码中修改这两项，再把修改后的html代码加到md文件中想要视频出现的地方即可
 
@@ -133,18 +134,28 @@ Jekyll支持另一种高亮方法，在正常的markdown预览器中无法显示
 </div>
 ```
 
-插入youtube视频
+#### 插入youtube视频
 
 直接在youtube页面点击分享 -> 嵌入，复制那段`<iframe`开头的html代码，放到md文件里就行
 
+#### 插入微博视频
+
+```html
+<div style="position: relative; padding: 30% 45%;">
+<video style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" controls="controls" src="https://f.video.weibocdn.com/o0/WqIEQCkLlx07WDlN7REY01041200pOlh0E010.mp4?label=mp4_1080p&template=1080x1920.24.0&media_id=4777383199440919&tp=8x8A3El:YTkl0eM8&us=0&ori=1&bf=4&ot=v&ps=3lckmu&uid=2tKINp&ab=7397-g1,6377-g0,1192-g0,3601-g29,1258-g0,7598-g0&Expires=1654505112&ssig=m3Yf2IsS57&KID=unistore,video"></video>
+</div>
+```
+
+src换成微博视频右键点击“复制链接地址”得到的链接
+
 ## 评论功能
 
-这里建议使用[gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)，因为其它支持的要么停止服务了，要么被墙
+这里建议使用[gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)，因为其它支持的要么停止服务了，要么被墙。gitalk本质上是在github.io这个repo里提issue，所以只要网页能访问，评论就能打开。
 
 1. 进入github -> Settings -> Developer settings -> OAuth Apps -> New OAuth App，或者直接点[这里](https://github.com/settings/applications/new)
 2. 填上面网页里的表，除了Authorization callback URL一定要填`USERNAME.github.io`，其它都随便填
 3. 按`Register application`按钮，得到`Client ID`和`Client Secret`.
-4. `_config.yml`里：
+4. `_config.yml`里，按照刚才得到的信息和你的个人信息填写如下内容：
 ```yml
 gitalk:
   enable: true

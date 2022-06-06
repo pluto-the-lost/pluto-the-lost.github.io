@@ -5,6 +5,11 @@ categories: blogs
 tags: [machine-learning, deep-learning, NLP, reinforcement-learning]
 ---
 
+<p>
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2019-07-04-dual-learning.md/mm.html" frameborder="1" scrolling="no"></iframe>
+</div>
+</p>
 
 ![image.png-101.6kB](/assets/images/2019-07-04-dual-learning.md/1.png)
 [link to the paper](https://papers.nips.cc/paper/6469-dual-learning-for-machine-translation.pdf)
@@ -87,8 +92,3 @@ I don't want to talk about this part, they just claimed that they are good
 ![image.png-61.4kB](/assets/images/2019-07-04-dual-learning.md/7.png)
         
 
-<p>
-<div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/html/mm.html" frameborder="1" scrolling="no"></iframe>
-</div>
-</p>
