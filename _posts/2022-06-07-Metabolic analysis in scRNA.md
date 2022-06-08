@@ -16,7 +16,7 @@ tags: [single-cell, data-analysis, scRNA-seq]
 第一篇文章是[Metabolic modeling of single Th17 cells reveals regulators of autoimmunity](https://www.cell.com/cell/fulltext/S0092-8674(21)00700-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867421007005%3Fshowall%3Dtrue)，2021年8月发表在Cell。作者是Nir Yosef，也是scVI的作者，来自UC Berkeley的团队，Aviv Regev也在作者里
 
 <div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 800px; left: 0; top: 0;" src="/assets/images/2022-06-07-Metabolic analysis in scRNA.md/Metabolic modeling of single Th17 cells reveals regulators of autoimmunity.pdf" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-07-Metabolic analysis in scRNA.md/Metabolic modeling of single Th17 cells reveals regulators of autoimmunity.pdf" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
 </div>
 
 这篇文章的生物学重点是研究了Th17和Treg的代谢差异，为了得到不同细胞的代谢反应强度，他提出了一个Compass方法，简单来说，是把一个`gene by cell matrix`转换成一个`reaction by cell matrix`的方法。
@@ -87,7 +87,7 @@ $$
 文章标题是[MEBOCOST: Metabolic Cell-Cell Communication Modeling by Single Cell Transcriptome](https://www.biorxiv.org/content/10.1101/2022.05.30.494067v1)，2022年5月31日刚挂上Biorxiv。作者是哈佛医学院、波士顿儿童医院的KAIFU CHEN。
 
 <div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 800px; left: 0; top: 0;" src="/assets/images/2022-06-07-Metabolic analysis in scRNA.md/MEBOCOST_ Metabolic Cell-Cell Communication Modeling by Single Cell Transcriptome _ bioRxiv.pdf" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/assets/images/2022-06-07-Metabolic analysis in scRNA.md/MEBOCOST_ Metabolic Cell-Cell Communication Modeling by Single Cell Transcriptome _ bioRxiv.pdf" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
 </div>
 
 这篇文章发现，包括Compass在内已经有好几个流平衡方法在做单细胞代谢推断了，那么就有两个问题，一是哪个方法做得更好，二是代谢推断做出来以后，能不能提升人们对细胞通讯的认知。
