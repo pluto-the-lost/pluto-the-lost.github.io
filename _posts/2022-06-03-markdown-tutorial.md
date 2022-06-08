@@ -37,3 +37,13 @@ this is something hidden in the void.
 this is something hidden in the void.
 
 </details>
+
+## 全角符号分隔符
+
+vs-code分词是用`editor.wordSeparators`作为分隔符，里面只包括了英文半角符号，这导致在写中文markdown的时候，`ctrl+shift+方向键`，会一下子选中一大片，加入中文全角符号可以显著改善这一现象。
+
+在vscode中，按`ctrl+shift+P`，输入Preference: Settings(UI)，找到`editor.wordSeparators`，在后面加上
+
+    ，。？：“”、《》（）
+
+就可以了
