@@ -48,7 +48,7 @@ vs-code分词是用`editor.wordSeparators`作为分隔符，里面只包括了�
 
 就可以了
 
-# 直接插入图片
+## 直接插入图片
 
 markdown的插入图片是用如下格式
 
