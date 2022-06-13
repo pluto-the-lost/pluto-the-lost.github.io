@@ -1,0 +1,54 @@
+{
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+
+  "inserthtml":{
+	"prefix": "iframe",
+	"body": [
+		"<div style=\"position: relative; padding: 30% 45%;\">",
+		"<iframe style=\"position: absolute; width: 100%; height: 100%; left: 0; top: 0;\" src=\"$1\" frameborder=\"no\" scrolling=\"no\" allowfullscreen=\"true\"></iframe>",
+		"</div>"],
+	"description": "insert an html or a pdf"
+  },
+
+  "bilibili":{
+	"prefix": "bilibili",
+	"body": [
+		"<div style=\"position: relative; padding: 30% 45%;\">",
+		"<iframe style=\"position: absolute; width: 100%; height: 100%; left: 0; top: 0;\" src=\"https://player.bilibili.com/player.html?cid=${1:cid here}&aid=${2:aid here}&page=1&as_wide=1&high_quality=1&danmaku=1\" frameborder=\"no\" scrolling=\"no\" allowfullscreen=\"true\"></iframe>",
+		"</div>"],
+	"description": "insert a bilibili vedio"
+  },
+
+  "redtext":{
+	"prefix": "redtext",
+	"body": "<b style='color:#FF7F7F;'>$1</b>",
+	"description": "text with red color"
+  },
+
+  "title":{
+	"prefix": "title",
+	"body": ["---",
+		"title: ${1:$TM_FILENAME_BASE}",
+		"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND +0800",
+		"categories: ${2:blogs}",
+		"tags: $3",
+		"---"],
+	"description": "yml title of post"
+  },
+
+  "detail":{
+	"prefix": "detail",
+	"body": ["<details>",
+		"<summary>Click to view hide content!</summary>",
+		"",
+		"${1:content here}",
+		"",
+		"</details>"],
+	"description": "fold content"
+  }
+
+}

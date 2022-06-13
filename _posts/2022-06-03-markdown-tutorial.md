@@ -70,3 +70,52 @@ markdown的插入图片是用如下格式
 
     ![](/assets/images/2022-06-03-markdown-tutorial.md/2022-06-13-15-57-17.png)
 
+## 设置自定义的代码补全
+
+vsvode里，代码自动补全功能叫做snippets，可以用一小段代码索引出来一大段。当你经常输入一大段固定格式的代码，这个功能就很有用。对于markdown写博客来说，对补全功能需求最高的莫过于插入html语言了，两种语言之间的切换是真的烦。比如输入如下代码可以插入一个html文件或pdf文件
+
+```html
+<div style="position: relative; padding: 30% 45%;">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="/path/to/file" frameborder="no" scrolling="no" allowfullscreen="true"></iframe>
+</div>
+```
+
+但谁记得住这么长串啊，不要紧，可以设置snippets，按`ctrl+shift+p`，打snippets，进入`Configure User Snippets`，选择`markdown`语言，就会打开一个`markdown.json`文件。在里面输入
+
+```json
+  "inserthtml":{
+  "prefix": "iframe",
+  "body": [
+    "<div style=\"position: relative; padding: 30% 45%;\">",
+    "<iframe style=\"position: absolute; width: 100%; height: 100%; left: 0; top: 0;\" src=\"$1\" frameborder=\"no\" scrolling=\"no\" allowfullscreen=\"true\"></iframe>",
+    "</div>"],
+  "description": "insert an html or a pdf"
+  }
+```
+
+保存，再打开`setting.json`，加入
+
+```json
+  "[markdown]": {
+      "editor.quickSuggestions": {
+          "strings": "on"
+      }
+  }
+```
+
+保存，这样在.md文件里输入 `iframe`，会有类似写代码的时候的自动补全选项跳出来，按回车，上面的一大段代码就自动插入了
+
+![](/assets/images/2022-06-03-markdown-tutorial.md/2022-06-13-17-17-10.png)
+
+类似的方法可以用在插入youtube或bilibili视频上，当然写其它语言的代码的时候也非常方便。
+
+我自己用的`markdown.json`文件也放到[这里了](/assets/images/2022-06-03-markdown-tutorial.md/markdown.json)，里面实现了
+
+| Snippets          | prefix     |
+| :---------------- | :--------- |
+| yml title         | `title`    |
+| insert bilibili   | `bilibili` |
+| bold red text     | `redtext`  |
+| auto-fold content | `detail`   |
+| assets path       | `assets`   |
+
