@@ -56,4 +56,10 @@
 	"body": "/assets/images/$TM_FILENAME",
 	"description": "to the filepath"
   },
+
+  "link":{
+	"prefix": "link",
+	"body": "[${1:text}](${2:url}){:target=\"_blank\"}",
+	"description": "link open at new tab"
+  }
 }
